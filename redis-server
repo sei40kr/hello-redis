@@ -5,4 +5,8 @@
 
 basepath="$(dirname "$(realpath "$0")")"
 
-docker run --rm -v "${basepath}/conf/redis.conf:/usr/local/etc/redis/redis.conf" --name redis-server redis /usr/local/etc/redis/redis.conf
+docker run --rm \
+       -v "${basepath}/conf/redis.conf:/usr/local/etc/redis/redis.conf" \
+       --name redis-server \
+       --sysctl net.core.somaxconn=511 \
+       redis /usr/local/etc/redis/redis.conf
