@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# redis-server
+# author: Seong Yong-ju <sei40kr@gmail.com>
+
+basepath="$(dirname "$(realpath "$0")")"
+
+docker run --rm -v "${basepath}/conf/redis.conf:/usr/local/etc/redis/redis.conf" --name redis-server redis /usr/local/etc/redis/redis.conf
