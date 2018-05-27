@@ -14,3 +14,7 @@
       $ ./redis-cli
       redis-server:6379> ping
     #+END_SRC
+
+** References
+
+    - [[https://redis.io/topics/quickstart][Redis Quick Start - Redis]]
