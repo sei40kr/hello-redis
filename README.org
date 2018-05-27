@@ -1,0 +1,16 @@
+* hello-redis
+
+  Where I learn Redis.
+
+** Starting Redis
+
+    #+BEGIN_SRC shell-script
+      ./redis-server
+    #+END_SRC
+
+** Check is Redis is working
+
+    #+BEGIN_SRC shell
+      $ ./redis-cli
+      redis-server:6379> ping
+    #+END_SRC
